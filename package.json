@@ -1,5 +1,6 @@
 {
   "name": "fatec-ecommerce-vuetify",
+  "description": "Sample basic e-commerce layout using Vue Router and Vuetify",
   "version": "0.1.0",
   "private": true,
   "scripts": {

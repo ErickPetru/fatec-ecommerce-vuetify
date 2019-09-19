@@ -1,5 +1,7 @@
 # fatec-ecommerce-vuetify
 
+> Sample basic e-commerce layout using Vue Router and Vuetify.
+
 ## Project setup
 ```
 npm install

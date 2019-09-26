@@ -40,6 +40,11 @@ export default {
   methods: {
     acessar () {
       if (this.login === 'erick' && this.password === '123') {
+        this.$ls.set('user', {
+          login: this.login,
+          nome: 'Erick Petrucelli',
+          email: 'erick.petrucelli@fatectq.edu.br'
+        })
         this.$router.push('/painel')
       } else {
         this.alerta = 'Usuário ou senha não correspondentes.'

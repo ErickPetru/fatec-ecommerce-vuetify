@@ -19,7 +19,12 @@
     <v-container>
       <v-row>
         <v-col cols="12" class="text-center">
-          Olá, seja bem-vindo!
+          <p>
+            Olá <b>{{ user.nome }}</b>, seja bem-vindo!
+          </p>
+          <p>
+            <a :href="`mailto:${user.email}`">{{ user.email }}</a>
+          </p>
         </v-col>
       </v-row>
     </v-container>
@@ -28,8 +33,14 @@
 
 <script>
 export default {
+  computed: {
+    user () {
+      return this.$ls.get('user')
+    }
+  },
   methods: {
     sair () {
+      this.$ls.remove('user')
       this.$router.push('/')
     }
   }
